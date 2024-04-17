@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinterest-like Hero Section</title>
+<style>
+    /* Resetting default margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    /* Container styles */
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    /* Image styles */
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Explore now button styles */
+    .explore-button {
+        padding: 15px 30px;
+        background-color: #bd081c;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .explore-button:hover {
+        background-color: #ab0718;
+    }
+</style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="hero">
+    <div class="hero-content">
+        <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image">
+        <div class="text-overlay">
+            <h1>Welcome to Our Inspiration Gallery</h1>
+            <p>Discover amazing ideas and inspirations</p>
+            <a href="#" class="explore-button">Explore Now</a>
+        </div>
+    </div>
+</div>
 
 </body>
-
 </html>
